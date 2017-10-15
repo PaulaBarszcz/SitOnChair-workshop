@@ -1,2 +1,3 @@
 # warsztat
-Warsztat zaawansowany css i basic js.
+Warsztat z zaawansowanego html'a i css'a.
+Projekt Sit On Chair.
