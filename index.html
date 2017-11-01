@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 <head>
     <meta charset="utf-8">
     <title>Sit on Chair</title>
@@ -7,109 +7,119 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container clearfix">
-            <h1 class="main-logo">
-                <a href=""> SIT <span>ON</span>CHAIR</a>
-            </h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h1 class="header-logo">
+                        <a href="#">SIT <span>ON</span> CHAIR</a>
+                    </h1>
+                </div>
+                <div class="col-sm-6 col-md-8">
+                    <span class="burger" id="burger"></span>
+                    <nav class="header-nav">
+                        <ul class="big-ul">
+                            <li>O FIRMIE
+                                <ul class="main-nav-submenu">
+                                    <li><a href="">Aktualności</a>
+                                    <li><a href="">Nasz team</a>
+                                    <li><a href="">Historia</a></li>
+                                </ul>
 
-            <nav class="main-nav">
-                <ul>
-                    <li>
-                        <a href="">O FIRMIE
-                        </a>
-                        <ul class="main-nav-submenu">
-                            <li><a href="">Aktualności</a>
-                            <li><a href="">Nasz team</a>
-                            <li><a href="">Historia</a></li>
+                            </li>
+                            <li>GALERIA</li>
+                            <li>KONTAKT</li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="">GALERIA</a>
-                    </li>
-                    <li>
-                        <a href="">KONTAKT</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>     
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <section class="section-slider">
         <div class="container">
             <div class="slider" id="main-slider">
-                <button type="button" class="left"> &lt; </button>
+                <span type="button" class="left"> <p class="btn-left-slider">&lt;</p> </span>
                 <div class="slider-cnt">
-                    <div class="slide">
+                    <div class="slide active">
                         <div class="slide-image">
-                            <img src="images/black_chair.png" alt="black chair">
+                            <img src="images/black_chair.png">
                         </div>
                         <div class="slide-cnt">
                             <h4 class="slide-title">
-                                SIT <span><strong>ON</strong></span> OUR <span><strong>CHAIR</strong></span>
+                                SIT<span><strong>ON</strong></span>OUR<span><strong>CHAIR</strong></span>
                             </h4>
                             <div class="slide-text">
-                                Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>
-                                Suspendise a pellentesque dui, non felis. Maecenas <br>
-                                malesuada elit lectus felis, malesuada ultricies. Curabitiur et
-                                ligula. Ut molestie a, ulticies porta urna.
+                                Lorem ipsum dolor sit amet enim. Etiam ullamcorper.Suspendise a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitiur et ligula. Ut molestie a, ulticies porta urna.
                             </div>
                             <a href="#" class="button slide-button">ZOBACZ WIĘCEJ</a>
                         </div>
-                    </div><!--e: slide-->
-
-                </div><!--e: slider-cnt-->
-                <button type="button" class="right"> &gt; </button>
-            </div><!--e: slider-->
-        </div><!--e: container-->
-    </section><!--e: section-slider-->
-
-    <section class="section-boxes">
-        <div class="container">
-            <h2 class="visuallyhidden">
-                Przykładowe realizacje
-            </h2>
-
-            <div class="row">
-                <div class="col col-1-3">
-                    <a href="" class="picture-cnt">
-                        <img src="images/box1_img.jpg" width="329" height="225" alt="chair clair picture">
-                        <div class="picture-cnt-description">
-                            <h3 class="title-border">Chair CLAIR</h3>
-                            <div class="picture-cnt-text">
-                            </div>
-                        </div><!--e:  picture-cnt-description -->
-                    </a><!--e:  picture-cnt -->
-                </div><!--e: col-1-3-->
-                
-                <div class="col col-1-3">
-                    <a href="#" class="picture-cnt">
-                        <img src="images/box2_img.jpg" width="329" height="225" alt="chair margarita picture">
-                        <div class="picture-cnt-description">
-                            <h3 class="title-border">Chair MARGARITA</h3>
-                            <div class="picture-cnt-text">
-                            </div>
+                    </div><!-- e: slide -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="images/red_chair.png">
                         </div>
-                    </a>
-                </div><!--e: col-1-3-->
+                        <br>
+                        <div class="slide-cnt">
+                            <h4 class="slide-title">
+                                SIT<span><strong>ON</strong></span>OUR<span><strong>CHAIR</strong>#2</span>
+                            </h4>
+                            <div class="slide-text">
+                                Lorem ipsum dolor sit amet enim. Etiam ullamcorper.Suspendise a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitiur et ligula. Ut molestie a, ulticies porta urna.
+                            </div>
 
-                <div class="col col-1-3 col-last">
-                    <a href="#" class="picture-cnt active">
-                        <img src="" width="329" height="225" alt="">
-                        <div class="picture-cnt-description">
-                            <h3 class="title-border">Finds all inputs</h3>
-                            <div class="picture-cnt-text">
-                            Jelly beans croissant oat cake sesame snaps lemon drops brownie donut lollipop. Sugar plum marshmallow<br><br> chocolate sweet roll biscuit dessert candy danish. Topping jelly candy caramels.
-                            </div><!--e: picture-cnt-text -->
-                        </div><!--e: picture-cnt-description -->
-                    </a><!--e: picture-cnt -->
-                </div><!-- e: col-1-3 -->
-            </div><!--e: row-->
-        </div><!--e: container-->
-    </section><!--e: section-boxes-->
+                            <a href="#" class="button slide-button">ZOBACZ WIĘCEJ</a>
+                        </div>
+                    </div><!-- e: slide -->
+                </div><!-- e: slide-cnt -->
+                <span type="button" class="right"> <p class="btn-right-slider">&gt;</p> </span>
+            </div><!-- e: slider -->
+        </div>
+    </section>
+
+    <div class="main-content">
+        <div class="container boxes">
+            <div class="box-one">
+                <div class="box-left-title">
+                    <div class="title">
+                        <p class="title-border">
+                            <span class="chair-title">
+                                Chair CLAIR
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-two">
+                <div class="box-left-title">
+                    <div class="title">
+                        <p class="title-border">
+                            <span class="chair-title">
+                                Chair MARGARITA
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-three">
+                <div class="box-left-title">
+                    <div class="title">
+                        <p class="title-border" id="box-3-title">
+                            <span class="chair-title">
+                                Chair SELENA
+                            </span>
+                        </p>
+                        <p class="box-3-text">Cake danish candy pie apple pie fruitcake dessert. Halvah pie sweet roll jujubes jelly beans bonbon. Powder cake ice cream bear claw.<br><br>
+                        Lollipop bear claw caramels brownie donut danish.</p>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
 
     <section class="section-prices">
         <div class="container">
@@ -117,9 +127,9 @@
                 <span> CENNIK </span>
             </h2>
 
-            <div class="row">
-                <div class="col col-1-3">
-                    <div class="price-list-box price-list-box posrel">
+            <div class="row row-prices">
+                <div class="margin-top-40">
+                    <div class="price-list-box posrel">
                         <h2 class="price-list-box-title">Basic plan</h2>
                         <div class="price-list-box-price">
                             <strong class="price-cnt">
@@ -136,8 +146,8 @@
                             <a href="" class="button price-list-box-btn">Dołącz</a>
                         </div><!--e: price-list-box-btn-cnt -->
                     </div><!--e: price-list-box -->
-                </div><!--e: col-1-3 -->
-                <div class="col col-1-3">
+                </div>
+                <div class="margin-top-40">
                     <div class="price-list-box price-list-box-active posrel active">
                         <h2 class="price-list-box-title">Standard plan</h2>
                         <div class="price-list-box-price">
@@ -156,8 +166,8 @@
                             <a href="" class="button price-list-box-btn">Dołącz</a>
                         </div><!--e: price-list-box-btn-cnt -->
                     </div><!--e: price-list-box -->
-                </div><!--e: col-1-3 -->
-                <div class="col col-1-3">
+                </div>
+                <div class="margin-top-40">
                     <div class="price-list-box price-list-box posrel">
                         <h2 class="price-list-box-title">Advance plan</h2>
                         <div class="price-list-box-price">
@@ -177,7 +187,7 @@
                             <a href="" class="button price-list-box-btn">Dołącz</a>
                         </div><!--e: price-list-box-btn-cnt -->
                     </div><!--e: price-list-box -->
-                </div><!--e: col-1-3 -->
+                </div>
             </div><!--e: row -->
         </div><!--e: container -->
     </section><!--e: section-prices -->
@@ -189,50 +199,57 @@
             </h2>
 
             <form class="contact-us-form">
-                <div class="row">
-
-                    <div class="col col-1-2 col-left">
-                        <div>
-                            <label for="formName">Imię</label>
-                            <input type="text" name="name" placeholder="Imię" id="formName">
-                        </div>
-                        <div>
-                            <label for="formEmail">Email</label>
-                            <input type="email" name="email" placeholder="Email" id="formEmail">
-                        </div>
-                        <div>
-                            <label for="formMessage">Wiadomość</label>
-                            <textarea id="formMessage" name="message" placeholder="Wiadomość"></textarea>
-                        </div>
-                    </div><!-- e: col-left -->
-
-                    <div class="col col-1-2 col-right">
-                        <span class="contact-us-form-img"></span>
-                        <label class="checkbox-label">
-                            <input type="checkbox">
-                            <span class="checkbox-icon"></span>
-                            <span class="checkbox-text">
-                                Zgadzam się na przetwarzanie danych osobowych
-                            </span>
-                        </label>
-                        <div>
-                            <button type="submit" class="button contact-us-form-btn">Wyślij</button>
-                        </div><!--e: button -->
-                    </div><!-- e: col-right -->
-                </div><!--e: row -->
+                <div class="row flex">
+                    <div class="form-left">
+                        <div class="margin-left-30">
+                        
+                            <div>
+                                <label for="formName">Imię</label>
+                                <input type="text" name="name" placeholder="Imię" id="formName">
+                            </div>
+                            <div>
+                                <label for="formEmail">Email</label>
+                                <input type="email" name="email" placeholder="Email" id="formEmail">
+                            </div>
+                            <div>
+                                <label for="formMessage">Wiadomość</label>
+                                <textarea id="formMessage" name="message" placeholder="Wiadomość"></textarea>
+                            </div>
+                        </div><!-- e: col -->
+                    </div><!-- e: form-left -->
+                    <div class="form-right">
+                        <div class="col ">
+                            <span class="contact-us-form-img"></span>
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                <span class="checkbox-icon"></span>
+                                <span class="checkbox-text">
+                                    Zgadzam się na przetwarzanie danych osobowych
+                                </span>
+                            </label>
+                            <div>
+                                <button type="submit" class="button contact-us-form-btn">Wyślij</button>
+                            </div><!--e: button -->
+                        </div><!-- e: col -->
+                    </div>
+                </div><!--e: row flex-->
             </form>
         </div><!--e: container -->
     </section><!--e: section-contact -->
 
+
+   
+
+
     <footer class="main-footer">
         <div class="container">
             <div class="row">
-                <div class="col col-1-2">
+                <div class="col-sm-12 col-md-5">
                     <small class="copyright">
                         Copyright 2014 | All Rights Reserved. - Sit On Chair
                     </small>
-                </div><!--e: col-1-2 -->
-                <div class="col col-1-2">
+                </div>
+                <div class="col-sm-12 col-md-4">
                     <div class="social-miniatures">
                         <ul class="social-icons">
                             <li>
@@ -248,14 +265,21 @@
                                 <a class="social social-twitter" href="">Twitter</a>
                             </li>
                         </ul>
+                    </div>
+                </div><!--e: column-->
+                <div class="col-sm-12 col-md-3">
+                    <div class="posrel">
                         <small class="footer-logo">
-                            Sit <span>On</span> Chair
+                            Sit&nbsp;<span>On&nbsp;</span>Chair
                         </small>
-                    </div><!--e: social-miniatures"-->
-                </div><!--e: col-1-2 -->
+                    </div>
+                </div>
+                
+                
             </div><!--e: row -->
         </div><!--e: container -->
     </footer>
-    
+
+    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
