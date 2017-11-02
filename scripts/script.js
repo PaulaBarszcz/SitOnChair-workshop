@@ -100,23 +100,39 @@ document.addEventListener("DOMContentLoaded", function(){
   
     var manageApp = function() {
         var drop_down_lists = document.querySelectorAll(".drop_down_list");
-        console.log(drop_down_lists); 
+        //console.log(drop_down_lists); 
         var list_arrows = document.querySelectorAll(".list_arrow");
-        console.log(list_arrows.length);
+        //console.log(list_arrows.length);
         var list_panels = document.querySelectorAll(".list_panel");
-        console.log(list_panels);
+        // console.log(list_panels);
+        // console.log('list_panels.length',list_panels.length);
+        // console.log('list_panels', list_panels);
+        var form_application = document.querySelector(".form-application");
+        var lis = form_application.querySelectorAll("li");
+        console.log(lis);
+
+
+        var list_label = form_application.querySelectorAll(".list_label");
+   
+        var summary_panel = document.querySelector(".summary_panel");
+        
+        var summary_title = summary_panel.querySelector(".title");
+
+        var summary_color = summary_panel.querySelector(".color");
+
+        var summary_pattern = summary_panel.querySelector(".pattern");
+
+        var summary_transport = summary_panel.querySelector(".transport");
+        
+
 
         for (var j=0; j<list_panels.length; j++) {
-            console.log("list panels display to empty");
             list_panels[j].style.display = "none";
         }
 
-        //list_panels[0].style.display = "block";
 
         for (var i=0; i<list_arrows.length; i++) {
-
-            //this.nextElementSibling.style.display = "";
-            //console.log(this.nextElementSibling.style.display); 
+ 
             list_arrows[i].addEventListener("click", function () {
                 var vis=0;
                 if (this.nextElementSibling.style.display === "block") {
@@ -131,6 +147,33 @@ document.addEventListener("DOMContentLoaded", function(){
             });
 
         }
+
+        for (var i=0; i<3; i++) {
+            lis[i].addEventListener("click", function () {
+                this.parentElement.parentElement.firstElementChild.innerText = this.innerText;
+                summary_title.innerText = "Chair "+this.innerText;
+
+            });
+        }
+
+        for (var i=3; i<6; i++) {
+            lis[i].addEventListener("click", function () {
+                this.parentElement.parentElement.firstElementChild.innerText = this.innerText;
+                    summary_color.innerText = this.innerText;
+
+            });
+        }
+
+        for (var i=6; i<8; i++) {
+            lis[i].addEventListener("click", function () {
+                this.parentElement.parentElement.firstElementChild.innerText = this.innerText;
+                    summary_pattern.innerText = this.innerText;
+
+            });
+        }
+
+
+
     }
 
     manageApp();
