@@ -1,12 +1,8 @@
-
-.form-application {
-    margin-top:50px;
-}
 .drop_down_list {
-    border:1px solid #8de0d2;
+    border:1px solid nth($colors, 15);
     width: 280px;
-    height:38px;
-    background-color: white;
+    height: 54px;
+    background-color: nth($colors, 1);
     margin-top:22px;
     padding: 8px 12px;
     position: relative;
@@ -14,14 +10,14 @@
 
 .list_label {
     font-size: 30px;
-    color: #e2e2e2;
-  
+    color: nth($colors, 6);
 }
 
 .checkbox-application {
     position: relative;
     padding: 30px 30px 30px 0;
 }
+
 .checkbox-application input {
     display: block;
     opacity: 0;
@@ -36,14 +32,14 @@
     padding-left: 65px;
     position: relative;
     font-size: 28px;
-    color: #cecece;
+    color: nth($colors, 6);
     line-height: 120%;
     padding-top: 10px;
     cursor: pointer;
 }
 
 .checkbox-application label::before, .checkbox-application label::after {
-    border: 1px solid #27c7ab;
+    border: 1px solid nth($colors, 7);
     content: "";
     display: block;
     left: 0;
@@ -52,6 +48,7 @@
     width: 48px;
     top: 0;
 }
+
 .checkbox-application label::after {
     background: url("../images/form_ok") no-repeat center;
     border: 0;
@@ -62,12 +59,10 @@
     display: block;
 }
 
-
 .checkbox-application.active-checkbox-application {
     background: url('../images/form_ok.jpg');
     width: 48px;
     height: 40px;
-
 }
 
 .image_part {
@@ -78,84 +73,78 @@
     }
 }
 
-
-
 .summary_panel { 
     background-color: white;
     width:300px;
     height: 300px;
     padding:10px;
-    
-}
-
-.application .green_button {
-    background-color: #27c7ab;
-    color: white;
-    text-align:center;
-    text-transform: uppercase;
-    width: 200px;
-    padding: 10px 30px;
-    font-size: 24px;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 29px;
-    border-radius: 8px;
-    text-decoration: none;
+            padding-top: 70px;
+        @media (min-width: 680px) {
+               padding-top: 0px;
+        }
 }
 
 .application {
-
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    .flex-left {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
     .panel_left {
-        margin-top: 50px;
+        margin-top: 5px;
         display: inline-block;
         width: 200px;
         height: 200px;
         vertical-align: top;
-        border-bottom: 1px solid #e7e7e7;
-        border-right: 1px solid #e7e7e7;
-       
+        border-bottom: 1px solid nth($colors, 4);
+        border-right: 1px solid nth($colors, 4); 
     }
 
     .panel_right {
-        margin-top: 50px;
+        margin-top: 5px;
         display: inline-block;
         width: 60px;
         height: 200px;
         text-align: right;
         vertical-align: top;
-        border-bottom: 1px solid #e7e7e7;
+        border-bottom: 1px solid nth($colors, 4);
         .color,
         .pattern,
         .transport {
-            color: #5b5a5a;
-        }
-        
+            color: nth($colors, 11);
+        }    
     }
 
     .panel_left h4 , .panel_right h4{
-        color: #24baa0;
+        color: nth($colors, 7);
         font-size: 23px;
     }
 
     .panel_left span{
         margin-top:10px;
         font-size: 22px;
-        color: #5b5a5a;
+        color: nth($colors, 11);
         display: block;
     }
 
     .panel_right span {
         display: block;
         font-size: 22px;
-        color: #24baa0;
-        margin-top:10px;
+        color: nth($colors, 7);
+        margin-top:10px; 
     }
+
     .sum_label{
         display: inline-block;
         width: 185px;
-        //padding-top: 10px;
+        margin-top: 10px;
         font-size: 22px;
-        color: #5b5a5a;
+        color: nth($colors, 11);
     }
 
     .sum {
@@ -164,7 +153,7 @@
         height: 60px;
         text-align: right;
         font-size: 22px;
-        color: #24baa0;
+        color: nth($colors, 7);
     }
 
     .list_arrow {
@@ -172,7 +161,7 @@
         height: 0;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-top: 15px solid #24baa0;
+        border-top: 15px solid nth($colors, 7);
         display:block;
         position: absolute;
         right: 14px;
@@ -187,14 +176,13 @@
             background-color: transparent;
             top: -21px;
             left: -15px;
-            cursor: pointer;
-            
+            cursor: pointer; 
         }
     }
 
     .list_panel {
         background-color: white;
-        border: 1px solid #ccc;
+        border: 1px solid nth($colors, 10);
         width: 288px;
         padding-left: 15px;
         padding-bottom: 10px;
@@ -203,35 +191,19 @@
         left: 0px;
         z-index: 2;
         position: absolute;
-        top: 54px;
+        top: 40px;
         display:none;
     }
+
     .list_panel li {
         margin-top:10px;
         cursor: pointer;
-        color: #585858;
+        color: nth($colors, 11);
     }
-
-
-}//end of application
-
-/*.title {
-  height: 30px;
-}*/
+}
 
 .application {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex: 1;
-    .flex-left {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-    }
-    .flex-center {
 
-    }
     .flex-right {
         display: flex;
         justify-content: flex-end;
@@ -322,33 +294,58 @@
     }
 }
 
-
-.application .title-border-big {
-
-    &.title-border-big-right span {
-    top: -83px;
-    left: 114px;
-    
+.application {
+    .title-border-big {
+        span {
+            top: 10px;
+            left: 36px;
+            color: nth($colors, 11);
+             @media (min-width: 680px) {
+                    top: -16px;
+                    left: 30px;    
+            }
+        }
+        &:after {
+            width: 296px;
+            height: 8px;
+            top: 49px;
+            left: 18px;
+            @media (min-width: 680px) {
+                top: 49px;
+                left: 35px; 
+            }
+        } 
     }
-    &.title-border-big-right:after {
-        width: 296px;
-        height: 8px;
-        position: absolute;
-        top: -42px;
-        left: 38px;
-    } 
+    .title-border-big-right {
+        span {
+            position: absolute;
+            top: 25px;
+            left: 140px;
+            color: nth($colors, 11);
+            @media (min-width: 680px) {
+                top: -121px;
+                left: auto;
+                right: -274px;
+            }
+        }
+
+        &:after {
+            content: '';
+            width: 296px;
+            height: 8px;
+            position: absolute;
+            top: 61px;
+            left: 56px;
+            @media (min-width: 680px) {
+                top: -72px;
+                left: -19px; 
+            }
+        } 
+    }
 }
 
 .application {
     padding-top: 45px;
-    .title-border-big {
-        span {
-            position: absolute;
-            top: 10px;
-            left: 36px;
-            color: nth($colors, 11);
-        }
-    }
     .form-left {
         display: flex;
         justify-content: flex-start;
@@ -384,14 +381,19 @@
     }
 } //end of .application
 
-
 .application-img {
     display: flex;
     justify-content: center;
     height: 210px;
-    //width: 30%;
     background: url(../images/red_chair.png) center top no-repeat;
     position: absolute;
     top: 56px;
     left: 35%;
+        @media (min-width: 888px) {
+            width: 30%;
+        }
+}
+
+.margin-right-30 {
+    margin-right: 30px;
 }
