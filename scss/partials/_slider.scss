@@ -1,0 +1,335 @@
+.section-slider {
+    z-index: 1;
+    width: 100%;
+    height: $slider-height-mobile;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(247,242,247,1) 38%, rgba(224,221,224,1) 74%, rgba(199,187,199,1) 99%, rgba(199,187,199,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(38%, rgba(247,242,247,1)), color-stop(74%, rgba(224,221,224,1)), color-stop(99%, rgba(199,187,199,1)), color-stop(100%, rgba(199,187,199,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(247,242,247,1) 38%, rgba(224,221,224,1) 74%, rgba(199,187,199,1) 99%, rgba(199,187,199,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(247,242,247,1) 38%, rgba(224,221,224,1) 74%, rgba(199,187,199,1) 99%, rgba(199,187,199,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(247,242,247,1) 38%, rgba(224,221,224,1) 74%, rgba(199,187,199,1) 99%, rgba(199,187,199,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(247,242,247,1) 38%, rgba(224,221,224,1) 74%, rgba(199,187,199,1) 99%, rgba(199,187,199,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c7bbc7', GradientType=0 );
+        position: relative;
+}
+
+.btn-left-slider {
+    position: absolute;
+    top: 35%;
+    left: 20px;
+}
+
+.btn-right-slider {
+    position: absolute;
+    top: 35%;
+    right: 20px;
+}
+
+@media (max-width: $media-mobile-slider) {
+
+    .section-slider {
+        .row,
+        .container {
+            height: 100%; 
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+        .slider {
+            width: 100%;
+            position: relative;
+            height: 100%;
+        }
+        .left {
+            width: 60px;
+            color: nth($colors, 2);
+            font-weight: 400;
+            font-size: 80px;
+            position: absolute;
+            left: 0;
+            background: none;
+            border: 0;
+            top: 0;
+            bottom: 0;
+            transition: 0.5s all;
+            cursor: pointer;
+            &:hover {
+                color: #222;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .right {
+            width: 60px;
+            color: nth($colors, 2);
+            font-weight: 400;
+            font-size: 80px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: none;
+            border: 0;
+            transition: 0.5s all;
+            cursor: pointer;
+            &:hover {
+                color: #222;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .slide {
+            width: 100%;
+            //height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;   
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            opacity: 0;
+            flex-wrap: wrap;
+        }
+        .slider-cnt {
+            margin: 0 70px;
+            height: 100%;
+            max-height: none;
+            position: relative;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        .slide-title span {
+            color: nth($colors, 2) ;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .button {
+            margin-top: 35px;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+// aktywny slide na mobilce
+        .slide.active {
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .slide-image {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+            img {
+                position: relative;
+                opacity: 1;                            
+            }
+            .slide-cnt {
+                opacity: 1;
+                top: 0;
+                display: flex;
+                flex-wrap: wrap;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s 0s ease-in-out all;
+                h4 {
+                    padding-top: 20px;
+                }
+            }
+            .slide-title {
+                opacity: 1;
+                text-align: center;
+                display: flex;
+                font-size: 33px;
+                font-weight: 400;
+                margin-top: -30px;
+                span {
+                    color: nth($colors, 2) ;
+                }
+            }
+
+            .slide-text {
+                opacity: 1;
+                text-align: center;
+                //padding: 5px 5px 10px 5px;
+                flex-wrap: wrap;
+            }
+            .button {
+                margin-top: 0px;
+                margin-bottom: 5px;
+                color: white;
+                text-decoration: none;
+                padding: 7px 20px;
+                border-radius: 10px;
+                font-size: 23px;
+                transition: 0.5s opacity;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+        } //end of .slide.active
+
+    } //end of .section-slider
+
+} //end of media (max-width: $media-mobile-slider)
+
+@media (min-width: $media-mobile-tablet) {
+    .section-slider {
+        z-index: 1;
+        width: 100%;
+        height: $slider-height;
+        display: flex;
+        flex: 1;
+    }
+    .section-slider {
+        .row,
+        .container {
+            height: 100%;
+        }
+        .slider {
+            width: 100%;
+            position: relative;
+            height: 100%;
+        }
+        .left {
+            width: 60px;
+            color: nth($colors, 2);
+            font-weight: 400;
+            font-size: 80px;
+            position: absolute;
+            left: 0;
+            background: none;
+            border: 0;
+            top: 0;
+            bottom: 0;
+            transition: 0.5s all;
+            cursor: pointer;
+            &:hover {
+                color: #222;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .right {
+            width: 60px;
+            color: nth($colors, 2);
+            font-weight: 400;
+            font-size: 80px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: none;
+            border: 0;
+            transition: 0.5s all;
+            cursor: pointer;
+            &:hover {
+                color: #222;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .slider-cnt {
+            margin: 0 100px;
+            height: 100%;
+            max-height: $slider-height;
+            position: relative;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0; 
+            img {
+                position: relative;
+                max-width: 90%;
+                width: 100%;
+                top: -50px;
+                opacity: 0;
+                transition: 0.5s 0s ease-in-out all;
+            } 
+        }
+        .slide-image {
+            float: left;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .slide-cnt {
+            height: 100%;
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            top: -50px;
+            position: relative;
+            transition: 0.5s 0.3s ease-in-out all;
+        }
+        .slide-title {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 43px;
+            font-weight: 400;
+            text-align: center;
+            span {
+                color: nth($colors, 2);
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        .button {
+            margin-top: 35px;
+        }
+//aktywny slide od tabletu w górę
+        .slide.active {
+            z-index: 1;
+            img {
+                top: 0;
+                left: 0;
+                opacity: 1;
+            }
+            .slide-cnt {
+                opacity: 1;
+                top: 0;
+            }
+        }
+
+    } //end of .section-slider
+    
+} //end of media (min-width: $media-mobile-tablet)
+
+//end of slider

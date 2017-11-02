@@ -1,0 +1,202 @@
+.section-prices {
+    margin-top: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: nth($colors, 4);
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    .title-border-big {
+        span {
+            position: absolute;
+            top: 10px;
+            left: 36px;
+            color: nth($colors, 11);
+        }
+    }
+}
+
+.price-list-box {
+    margin-bottom: 40px;
+    margin-left: 30px;
+    background: nth($colors, 5);
+    border: 2px solid nth($colors, 6);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:before {
+        content: '';
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        left: 106px;
+        top: -60px;
+        position: absolute;
+        border: 2px solid nth($colors, 6);
+        background-color: nth($colors, 5);
+        transform: translate(50%, 50%);
+    }
+    &:after {
+        content: '';
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        left: 131px;
+        top: -35px;
+        position: absolute;
+        border: 2px solid nth($colors, 6);
+        background-color: nth($colors, 6);
+        transform: translate(50%, 50%);
+    }
+    .price-list-box-title {
+        font-size: 26px;
+        text-align: center;
+        text-transform: uppercase;
+        color: nth($colors, 7);
+        margin-top: 40px;
+    }
+    .price-list-box-price {
+        display: flex;
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        border: 2px solid nth($colors, 6);
+        background: nth($colors, 1);
+        margin: 35px auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &:hover {
+            transform: rotate(360deg);
+            transition: 2.5s;
+        }
+    }
+    .price-cnt {
+        display: flex;
+        color: nth($colors, 10); 
+        font-weight: bold;
+        .price {
+            font-size: 45px;
+            font-weight: 600;
+            font-weight: bold;
+        }
+        .small {
+            font-size: 16px;
+            padding-top: 15px;
+            font-weight: bold;
+        }
+    }
+    .price-text {
+        text-align: center;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: nth($colors, 10);
+        font-weight: bold;
+    }
+    .price-list-box-points li {
+        background: nth($colors, 9);
+        font-size: 24px;
+        text-align: center;
+        padding: 10px 30px;
+        color: nth($colors, 11);
+        &:nth-of-type(even) {
+            background: nth($colors, 4); 
+        }
+    }
+    .price-list-box-btn-cnt {
+        font-size: 16px;
+        margin-top: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 5px 27px;
+        margin-top: auto;
+        text-transform: uppercase;
+    }
+    .price-list-box-btn:hover {
+        box-shadow: 0 0 10px 3px nth($colors, 8);
+        transition: 0.5s all;
+    }
+
+
+} //end of .price-list-box
+
+/* active */
+
+.price-list-box.active {
+    background: nth($colors, 7);
+    border-color: nth($colors, 7);
+    .price-list-box-btn:hover {
+        box-shadow: 0 0 10px 3px nth($colors, 1);
+        transition: 0.5s all;
+    }
+    .price-list-box-title {
+        color: nth($colors, 1);
+    }
+    .price-list-box-price {
+        border-color: nth($colors, 7);
+    }
+    .price-cnt {
+        .price,
+        .small {
+            color: nth($colors, 7);
+        }
+    }
+    .price-text {
+        color: nth($colors, 7);
+    }
+    .button {
+        background: nth($colors, 1);
+        color: nth($colors, 7);
+    }
+
+} // end of .price-list-box.active 
+
+
+.row-prices {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row, .posrel{
+    position: relative;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.price-list-box-active {
+    &:before {
+        content: '';
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        left: 106px;
+        top: -60px;
+        position: absolute;
+        border: 2px solid nth($colors, 7);
+        background-color: nth($colors, 7);
+        transform: translate(50%, 50%);
+    }
+    &:after {
+        content: '';
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        left: 131px;
+        top: -35px;
+        position: absolute;
+        border: 2px solid nth($colors, 5);
+        background-color: nth($colors, 5);
+        transform: translate(50%, 50%);
+    }
+}

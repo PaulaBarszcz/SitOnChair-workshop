@@ -1,0 +1,68 @@
+.social-miniatures {
+    margin-left: 0px;
+}
+
+.main-footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    .col:nth-of-type(3) {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .copyright {
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 23px;
+        color: nth($colors, 12);
+        display: flex;
+        justify-content: flex-start;  
+    }
+    .social-icons {
+        display: inline-block;
+    }
+    .footer-logo {
+        display: inline-block;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        color: nth($colors, 12);
+        display: flex;
+        justify-content: flex-end;
+        line-height: 35px;
+        span {
+            font-weight: bold;
+        }
+    }
+} // end of .main-footer
+
+.social-miniatures {
+    display: flex;
+    justify-content: center;
+
+}
+.social-icons {
+    li {
+        display: inline-block;
+        .social {
+            width: 35px;
+            height: 35px;
+            text-indent: -999px;
+            overflow: hidden;
+            text-align: left;
+            display: inline-block;
+        }
+    }
+    .social-flickr {
+        background: url(../images/flickr.png) no-repeat;
+    }
+    .social-vimeo {
+        background: url(../images/vimeo.png) no-repeat;
+    }
+    .social-pinterest {
+        background: url(../images/pinterest.png) no-repeat;
+    }
+    .social-twitter {
+        background: url(../images/twitter.png) no-repeat;
+    }
+
+} // end of .social-icons
