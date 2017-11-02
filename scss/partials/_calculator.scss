@@ -173,6 +173,18 @@
         right: 14px;
         top: 20px;
         cursor: pointer;
+        z-index: 2;
+        &:after{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            content: '';
+            background-color: transparent;
+            top: -21px;
+            left: -15px;
+            cursor: pointer;
+            z-index: 1;
+        }
     }
 
     .list_panel {
@@ -373,8 +385,8 @@
     justify-content: center;
     height: 210px;
     width: 300px;
-    background: url(../images/red_chair.png) center top no-repeat;
+    background: url(1../images/red_chair.png) center top no-repeat;
     position: absolute;
     top: 56px;
-    left: 384px;
+    left: 35%;
 }

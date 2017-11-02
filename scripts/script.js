@@ -96,5 +96,44 @@ document.addEventListener("DOMContentLoaded", function(){
     manageSlider();
 
 
+// application
+  
+    var manageApp = function() {
+        var drop_down_lists = document.querySelectorAll(".drop_down_list");
+        console.log(drop_down_lists); 
+        var list_arrows = document.querySelectorAll(".list_arrow");
+        console.log(list_arrows.length);
+        var list_panels = document.querySelectorAll(".list_panel");
+        console.log(list_panels);
+
+        for (var j=0; j<list_panels.length; j++) {
+            console.log("list panels display to empty");
+            list_panels[j].style.display = "none";
+        }
+
+        //list_panels[0].style.display = "block";
+
+        for (var i=0; i<list_arrows.length; i++) {
+
+            //this.nextElementSibling.style.display = "";
+            //console.log(this.nextElementSibling.style.display); 
+            list_arrows[i].addEventListener("click", function () {
+                var vis=0;
+                if (this.nextElementSibling.style.display === "block") {
+                    this.nextElementSibling.style.display = "none"; 
+
+                }
+
+                else if  (this.nextElementSibling.style.display === "none") {
+                    this.nextElementSibling.style.display = "block";
+
+                }
+            });
+
+        }
+    }
+
+    manageApp();
+
 
 }); //end of DOMContentLoaded
