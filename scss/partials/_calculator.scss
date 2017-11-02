@@ -1,83 +1,74 @@
 
-
-
 .form-application {
-  margin-top:50px;
+    margin-top:50px;
 }
 .drop_down_list {
-  border:1px solid #8de0d2;
-  width: 280px;
-  height:38px;
-  background-color: white;
-  margin-top:22px;
-  padding: 8px 12px;
-  position: relative;
+    border:1px solid #8de0d2;
+    width: 280px;
+    height:38px;
+    background-color: white;
+    margin-top:22px;
+    padding: 8px 12px;
+    position: relative;
 }
 
 .list_label {
-  font-size: 30px;
-  color: #e2e2e2;
+    font-size: 30px;
+    color: #e2e2e2;
   
 }
 
-
-
-
-
 .checkbox-application {
-  position: relative;
-  padding: 30px 30px 30px 0;
+    position: relative;
+    padding: 30px 30px 30px 0;
 }
 .checkbox-application input {
-  display: block;
-  opacity: 0;
-  height: 48px;
-  position: absolute;
-  width: 48px;
-  cursor: pointer;
+    display: block;
+    opacity: 0;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    cursor: pointer;
 }
 
 .checkbox-application label {
-  display: block;
-  padding-left: 65px;
-  position: relative;
-  font-size: 28px;
-  color: #cecece;
-  line-height: 120%;
-  padding-top: 10px;
-  cursor: pointer;
+    display: block;
+    padding-left: 65px;
+    position: relative;
+    font-size: 28px;
+    color: #cecece;
+    line-height: 120%;
+    padding-top: 10px;
+    cursor: pointer;
 }
 
 .checkbox-application label::before, .checkbox-application label::after {
-  border: 1px solid #27c7ab;
-  content: "";
-  display: block;
-  left: 0;
-  height: 48px;
-  position: absolute;
-  width: 48px;
-  top: 0;
+    border: 1px solid #27c7ab;
+    content: "";
+    display: block;
+    left: 0;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    top: 0;
 }
 .checkbox-application label::after {
-  background: url("../images/form_ok") no-repeat center;
-  border: 0;
-  display: none;
+    background: url("../images/form_ok") no-repeat center;
+    border: 0;
+    display: none;
 }
 
 .checkbox-application input:checked + label::after {
-  display: block;
+    display: block;
 }
 
 
 .checkbox-application.active-checkbox-application {
-  background: url('../images/form_ok.jpg');
-  width: 48px;
-  height: 40px;
+    background: url('../images/form_ok.jpg');
+    width: 48px;
+    height: 40px;
 
 }
-
-
-
 
 .image_part {
     display: flex;
@@ -89,131 +80,119 @@
 
 
 
-
-/*.application .green_bell {
-  background-color: #24baa0;
-  width: 200px;
-  height: 6px;
-  display: inline-block;
-  margin: 5px 0 5px 0;
-}*/
-
-.summary_panel {
-   
-  background-color: white;
-  border: 1px solid red;
-  width:300px;
-  height: 300px;
-  //padding:10px;
-
-
+.summary_panel { 
+    background-color: white;
+    width:300px;
+    height: 300px;
+    padding:10px;
+    
 }
 
 .application .green_button {
-  background-color: #27c7ab;
-  color: white;
-  text-align:center;
-  text-transform: uppercase;
-  width: 200px;
-  padding: 10px 30px;
-  font-size: 24px;
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 29px;
-  border-radius: 8px;
-  text-decoration: none;
+    background-color: #27c7ab;
+    color: white;
+    text-align:center;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 10px 30px;
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 29px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .application {
 
     .panel_left {
-      display: inline-block;
-      width: 200px;
-      vertical-align: top;
-      //padding-bottom:10px;
-      border:1px solid green;
-      height: 200px;
+        margin-top: 50px;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        vertical-align: top;
+        border-bottom: 1px solid #e7e7e7;
+        border-right: 1px solid #e7e7e7;
+       
     }
 
     .panel_right {
-      display: inline-block;
-      width: 50px;
-      border-left:1px solid #e7e7e7;
-      text-align: right;
-      vertical-align: top;
-      //padding-bottom:10px;
-      border-bottom:1px solid #e7e7e7;
-      height: 200px;
-      border:1px solid pink;
+        margin-top: 50px;
+        display: inline-block;
+        width: 60px;
+        height: 200px;
+        text-align: right;
+        vertical-align: top;
+        border-bottom: 1px solid #e7e7e7;
+        
     }
 
     .panel_left h4 , .panel_right h4{
-      color: #24baa0;
-      font-size: 23px;
+        color: #24baa0;
+        font-size: 23px;
     }
 
     .panel_left span{
-      margin-top:10px;
-      font-size: 22px;
-      color: #5b5a5a;
-      display: block;
+        margin-top:10px;
+        font-size: 22px;
+        color: #5b5a5a;
+        display: block;
     }
 
     .panel_right span {
-      display: block;
-      font-size: 22px;
-      color: #24baa0;
-      margin-top:10px;
+        display: block;
+        font-size: 22px;
+        color: #24baa0;
+        margin-top:10px;
     }
     .sum_label{
-      display: inline-block;
-      width: 185px;
-      margin-top: 10px;
-      font-size: 22px;
-      color: #5b5a5a;
+        display: inline-block;
+        width: 185px;
+        //margin-top: 10px;
+        font-size: 22px;
+        color: #5b5a5a;
     }
 
     .sum {
-      display: inline-block;
-      width: 300px;
-      height: 70px;
-      text-align: right;
-      margin-top: 10px;
-      font-size: 22px;
-      color: #24baa0;
+        display: inline-block;
+        width: 270px;
+        height: 60px;
+        text-align: right;
+        font-size: 22px;
+        color: #24baa0;
     }
 
     .list_arrow {
-      width: 0;
-      height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid #24baa0;
-      display:block;
-      position: absolute;
-      right: 14px;
-      top: 20px;
-      cursor: pointer;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #24baa0;
+        display:block;
+        position: absolute;
+        right: 14px;
+        top: 20px;
+        cursor: pointer;
     }
 
     .list_panel {
-      background-color: white;
-      border: 1px solid #ccc;
-      width: 288px;
-      padding-left: 15px;
-      padding-bottom: 10px;
-      list-style: none;
-      margin: 0;
-      left: 0px;
-      z-index: 2;
-      position: absolute;
-      top: 54px;
-      display:none;
+        background-color: white;
+        border: 1px solid #ccc;
+        width: 288px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        list-style: none;
+        margin: 0;
+        left: 0px;
+        z-index: 2;
+        position: absolute;
+        top: 54px;
+        display:none;
     }
     .list_panel li {
-      margin-top:10px;
-      cursor: pointer;
-      color: #585858;
+        margin-top:10px;
+        cursor: pointer;
+        color: #585858;
     }
 
 
@@ -234,9 +213,7 @@
         flex-direction: column;
     }
     .flex-center {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+
     }
     .flex-right {
         display: flex;
@@ -369,7 +346,6 @@
     .form-center {
         display: flex;
         justify-content: center;
-        
     }
 
     .form-right {
@@ -393,15 +369,12 @@
 
 
 .application-img {
-
     display: flex;
     justify-content: center;
     height: 210px;
     width: 300px;
     background: url(../images/red_chair.png) center top no-repeat;
-    /*margin-top: -26px;*/
-   /* position: absolute;
-    top: 84px;
-    left: 293px;*/
-
+    position: absolute;
+    top: 56px;
+    left: 384px;
 }
