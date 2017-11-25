@@ -80,9 +80,9 @@ header {
                     border: 15px solid transparent;
                 }
                         
-                li:first-child:hover {
+                li:first-child {
                     ul {
-                        display: block;
+                        display: none;
                         position: absolute;
                         top: 76px;
                         right: 191px;
@@ -171,8 +171,8 @@ header {
             padding: 5px 5px;
             margin: 2px 2px;
 
-            &:hover ul {
-                display: block;
+            ul {
+                display: none;
                 position: absolute;
                 top: -4px;
                 right: 123%;

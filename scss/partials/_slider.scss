@@ -42,6 +42,7 @@
             width: 100%;
             position: relative;
             height: 100%;
+            display: flex;
         }
         .left {
             width: 60px;
@@ -160,7 +161,8 @@
                 opacity: 1;
                 text-align: center;
                 display: flex;
-                font-size: 33px;
+                word-break: break-all;
+                font-size: 22px;
                 font-weight: 400;
                 margin-top: -30px;
                 span {

@@ -295,26 +295,39 @@
 }
 
 .application {
-    .title-border-big {
-        span {
-            top: 10px;
-            left: 36px;
-            color: nth($colors, 11);
-             @media (min-width: 680px) {
-                    top: -16px;
-                    left: 30px;    
+    .container{
+        h2{
+            span{
+                position: absolute;
+                left: 37px;
+                top: 10px;
+                color: #8F8F8F;
             }
         }
-        &:after {
-            width: 296px;
-            height: 8px;
-            top: 49px;
-            left: 18px;
-            @media (min-width: 680px) {
-                top: 49px;
-                left: 35px; 
+    }
+
+    .contact-us-form{
+        .title-border-big {
+            span {
+                top: -80px;
+                left: 82px;
+                color: nth($colors, 11);
+                @media (max-width: 680px) {
+                        top: 7px;
+                        left: 105px;  
+                }
             }
-        } 
+            &:after {
+                width: 296px;
+                height: 8px;
+                top: 49px;
+                left: 18px;
+                @media (min-width: 680px) {
+                        top: -41px;
+                        left: -2px;    
+                }
+            } 
+        }
     }
     .title-border-big-right {
         span {
@@ -341,6 +354,14 @@
                 left: -19px; 
             }
         } 
+    }
+}
+
+.application {
+    @media (max-width: 454px) {
+        .title-border-big:after{
+            top: 75px;  
+        }
     }
 }
 
